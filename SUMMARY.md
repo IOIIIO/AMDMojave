@@ -1,4 +1,5 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [In the beginning there was nothing.](README.md)
+* [What will we need?](what-will-we-need.md)
 
