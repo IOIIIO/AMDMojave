@@ -24,7 +24,12 @@ description: Water. Stay hydrated kids!
   * [Download](https://code.visualstudio.com/#alt-downloads)
 * **gibMacOs.** A great tool made by CorpNewt that we will be using through this entire guide.
   * [Download](https://github.com/IOIIIO/gibMacOS)
-  * The link above is my fork of the tool with added AMD functionality to make your life easier.
+  * ~~The link above is my fork of the tool with added AMD functionality to make your life easier.~~ 
+    * This is broken, use the normal one.
+* **Prelinkedkernel**
+  * 10.14.1:
+    * Download
+  * Other versions coming soon.
 
   
   
