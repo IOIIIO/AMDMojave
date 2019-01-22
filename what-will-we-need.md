@@ -22,14 +22,16 @@ description: Water. Stay hydrated kids!
   * Make sure you enable "add to PATH" in the install
 * **A good text editor.** I personally recommend Visual Studio:Code
   * [Download](https://code.visualstudio.com/#alt-downloads)
-* **gibMacOs.** A great tool made by CorpNewt that we will be using through this entire guide.
-  * [Download](https://github.com/IOIIIO/gibMacOS)
-  * ~~The link above is my fork of the tool with added AMD functionality to make your life easier.~~ 
-    * This is broken, use the normal one.
-* **Prelinkedkernel**
+* **gibMacOs.** A great set of tools made by CorpNewt that we will be using through this entire guide.
+* [Download](https://github.com/CorpNewt/gibMacOS)
+* ~~The link above is my fork of the tool with added AMD functionality to make your life easier.~~ 
+  * This is broken, use the normal one.
+* **Install files**
   * 10.14.1:
-    * Download
+    * [Download](https://github.com/IOIIIO/AMDMojave/tree/master/files) \(Credits to Shaneee\)
   * Other versions coming soon.
+
+\*\*\*\*
 
   
   
