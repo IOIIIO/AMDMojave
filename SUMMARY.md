@@ -6,9 +6,9 @@
 * [Making your installer USB](making-your-installer-usb.md)
 * [Installing and setting up Clover](installing-and-setting-up-clover.md)
 * [Config.plist Basics](https://hackintosh.gitbook.io/-r-hackintosh-vanilla-desktop-guide/config.plist-basics)
-* [Making a Ryzen config](https://vanilla-amd.ml/example-config.plists/ryzen)
+* [Ryzen plist](ryzen-plist.md)
 * [Adding the prelinked](adding-the-prelinked.md)
-* [Installing](https://vanilla-amd.ml/installing)
+* [Installing](installing.md)
 * [Final Touches](https://vanilla-amd.ml/final-touches)
 * [Credits](credits.md)
 

@@ -1,7 +1,3 @@
----
-description: The start of our epic journey.
----
-
 # In the beginning there was nothing.
 
 So you have decided to make a vanilla Mojave installer for your AMD system, but for some reason don't have access to a VM or a Mac to make one properly. Maybe you don't have enough RAM for your VM, or maybe you just don't have a big enough USB drive. \(seriously? No 8GB drive in 2019?\)  

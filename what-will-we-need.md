@@ -1,7 +1,3 @@
----
-description: Water. Stay hydrated kids!
----
-
 # What will we need?
 
 ## Hardware wise
