@@ -17,7 +17,8 @@
 * _AlexTheGreat4000 -_ Some master bugcatching
 * **You** - For reading the guide!
 
-If you for some reason need to contact me personally, I am available on discord with the tag @NoOne\#8086. I am more likely to answer a hackintosh question if you ask it in either the r/hackintosh discord or the AMD OS X discord.
+For any inquiries contact us at the AMD OS X discord server linked bellow.  
+Brought to you by NoOne, DhinakG.
 
 ### Sources
 

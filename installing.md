@@ -51,20 +51,20 @@ Now press _Erase_ and our disk setup is completed!
 
 ### First phase of install
 
-Now that our drive has been set up you can exit disk utility and launch _Reinstall macOS_ and hit _Continue._ When you are prompted to select what drive you want to install to select your previously configured drive, in my case "macOS". This part of the installer does not actually install the OS, but only copies the files needed to do so to the drive. 
+Now that our drive has been set up you can exit disk utility and launch _Reinstall macOS_ and hit _Continue._ When you are prompted to select what drive you want to install to select your previously configured drive, in my case "macOS". This part of the installer does not actually install the OS, but only copies the files needed to do so to the drive.
 
 When this part is done the installer will automatically reboot.
 
 ### Pre-Install modification
 
-During the previous phase of the install a prelinkedkernel was copied over to the drive. This is the default prelinkedkernel containing the native Intel kernel, and thus cannot be booted by our AMD system. We will have to replace it. 
+During the previous phase of the install a prelinkedkernel was copied over to the drive. This is the default prelinkedkernel containing the native Intel kernel, and thus cannot be booted by our AMD system. We will have to replace it.
 
 To do so boot back in to the _OS X Base System_, in Clover, instead of what is automatically selected. Wait for the installer to boot again, chose your language and you will again be prompted by the window with multiple choices. This time we won't be using those.
 
 On the bar on top of your screen press _Utilities_ and from the dropdown menu that shows up launch _Terminal_. Now enter the following command to copy the prelinkedkernel from our USB to the installer on the drive.
 
 ```bash
-cp -Rf /System/Library/PrelinkedKernels/prelinkedkernel /Volumes/macOS/macOS\ Install\ Data/Locked\ Files/Boot\ Files/prelinkedkernel
+cp -Rf /System/Library/PrelinkedKernels/prelinkedkernel.amd /Volumes/macOS/macOS\ Install\ Data/Locked\ Files/Boot\ Files/prelinkedkernel.amd
 ```
 
 You can now reboot your computer by typing
@@ -92,7 +92,6 @@ cp -Rf /System/Library/Kernels/kernel /Volumes/macOS/System/Library/Kernels/kern
 Now that the kernel has been copied you are almost done on Ryzen. You will need to copy over one kext and then you will only have to rebuild the prelinkedkernel aka kextcache. This is done in the same way as when we were setting up the USB drive.
 
 ```bash
-cp -rf /System/Library/Extensions/IONetworkingFamily.kext /Volumes/macOS/System/Library/Extensions/IONetworkingFamily.kext
 chown -R 0:0 /Volumes/macOS/System/Library/Extensions
 chmod -R 755 /Volumes/macOS/System/Library/Extensions/*.kext
 touch /Volumes/macOS/System/Library/Extensions
@@ -109,7 +108,6 @@ If you are on FX and have used the aforementioned DummyUSB kexts you will need t
 
 ```bash
 cp -rf /System/Library/Extensions/Dummy*.kext /Volumes/macOS/System/Library/Extensions/
-cp -rf /System/Library/Extensions/IONetworkingFamily.kext /Volumes/macOS/System/Library/Extensions/IONetworkingFamily.kext
 ```
 
 Since we are adding kexts to S/L/E we will have to fix their permissions. This is done just like before with the following commands:
